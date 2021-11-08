@@ -14,6 +14,8 @@ In the root directory of the project run the following command to launch
 Application url 
 ### [http://localhost:8080](http://localhost:8080)
 
+![Image of run](demo.png)
+
 To run test root directory of the project run the following command 
 ```
 ./gradlew clean test
