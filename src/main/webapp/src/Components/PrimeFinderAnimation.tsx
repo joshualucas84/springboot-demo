@@ -1,18 +1,14 @@
 import * as React from 'react';
 
 import * as mui from '@mui/material';
+//https://mariusschulz.com/blog/typing-destructured-object-parameters-in-typescript#typing-immediately-destructured-parameters
 
 const arrDeepCopy = (arr:any) => {
     let copy: any = [];
     arr.forEach((elem:any) => {
         if(Array.isArray(elem)){
             copy.push(arrDeepCopy(elem));
-        }
-        //   else{
-        //     if (typeof elem === 'object') {
-        //       copy.push(deepCopyObject(elem))
-        //   }
-        else {
+        } else {
             copy.push(elem)
         }
     });
@@ -99,7 +95,7 @@ export default function PrimeFinderAnimation(
                 primes:[...data.primes],
                 multiplesLists: arrDeepCopy(data.multiplesLists)
             },
-            animationArray: data.multiplesLists.flat()/*.concat([...data.primes])*/,
+            animationArray: data.multiplesLists.flat(),
             startedWithPrimes: false,
             colorMatrix:[...new Array(Math.ceil(data.n/10))]
                         .map(
@@ -157,21 +153,14 @@ export default function PrimeFinderAnimation(
 
     React.useEffect(() => {
 
-        // timerId = window.setInterval(() => {
-        //     console.log("launching setNextCellColor");
-        //     setNextCellColor();
-        // }, 3000);
-
         timer.start(
             () => setNextCellColor()
         ,200);
 
         return () => {
-          //clearInterval(timerId);
           timer.stop();
         };
       },
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       []);
 
     return (

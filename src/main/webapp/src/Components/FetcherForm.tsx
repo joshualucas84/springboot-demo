@@ -1,22 +1,19 @@
 import * as React from 'react';
-//import axios from 'axios'
 
 import * as mui from '@mui/material';
 
 export default function FetcherForm(props: {callBackSetData:(data: any) => void}) {
 
     const [nValue, setnValue] = React.useState(
-        {value:10, valid:true}
+        {value:30, valid:true}
     );
 
     const handleSubmit = async (e: any) => {
 
         e.preventDefault()
 
-        //try fetch
         const response = await window.fetch(
-            //"http://localhost:8080/sieve/" +  nValue.value
-            "/sieve/" +  nValue.value
+            "/primefind/" +  nValue.value
         );
 
         if(!response.ok){

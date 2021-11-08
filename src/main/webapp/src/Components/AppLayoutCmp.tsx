@@ -9,9 +9,7 @@ import PrimeFinderAnimation from './PrimeFinderAnimation';
 
 function ElevationScroll(props:any) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
+
   const trigger = mui.useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
@@ -25,10 +23,7 @@ function ElevationScroll(props:any) {
 
 ElevationScroll.propTypes = {
   children: PropTypes.element.isRequired,
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
+
   window: PropTypes.func,
 };
 
@@ -43,9 +38,9 @@ export default function AppLayoutCmp(props:any) {
         }
         >(
             {
-                n: 10,
-                primes:[2,3,5,7],
-                multiplesLists:[[2,4,6,8,10],[3,9]]
+                n: 30,
+                primes:[2,3,5,7,11,13,17,19,23,29],
+                multiplesLists:[[2,4,6,8,10,12,14,16,18,20,22,24,26,28,30],[3,9,12,15,18,21,24,27,30],[],[5,25,30]]
             }
     );
 
@@ -92,7 +87,7 @@ export default function AppLayoutCmp(props:any) {
                     <muiIcons.Calculate />
                 </mui.IconButton>
                 <mui.Typography variant="h6" component="div">
-                    Sieve of Eratosthenes
+                    Hexagon find Prime Demo
                 </mui.Typography>
             </mui.Toolbar>
             </mui.AppBar>
