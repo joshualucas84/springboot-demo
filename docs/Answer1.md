@@ -1,5 +1,5 @@
-###[Navigate to Home](../README.md)
-###[Navigate to Answer to Question 2](docs/Answer2.md)
+[Navigate to Home](../README.md)
+[Navigate to Answer to Question 2](docs/Answer2.md)
 
 
 In the root directory of the project run the following command to launch
@@ -8,7 +8,7 @@ In the root directory of the project run the following command to launch
 ```
 
 Application url 
-#[http://localhost:8080](http://localhost:8080)
+[http://localhost:8080](http://localhost:8080)
 
 To run test root directory of the project run the following command 
 ```
