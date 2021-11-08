@@ -6,7 +6,7 @@ git clone git@github.com:joshualucas84/springboot-demo.git
 cd springboot-demo
 ```
 
-In the root directory of the project run the following command to launch
+In the root directory of the project run the following command to launch application
 ```
 ./gradlew bootRun
 ```
@@ -16,7 +16,7 @@ Application url
 
 ![Image of run](demo.png)
 
-To run test root directory of the project run the following command 
+To run test from root directory of the project, run the following command 
 ```
 ./gradlew clean test
 ```
