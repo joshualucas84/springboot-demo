@@ -8,7 +8,7 @@ The code should compile and run under JDK 1.8.  Upload your code to your persona
 Question 1:
 The Sieve of Eratosthenes is the earliest means of finding prime numbers.  A description can be found at https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes.  Write a Spring boot application that implements this.  The application should provide a front-end (preferably React) that takes a maximum integer value as an input, and displays the list of prime numbers between 0 and that number.  Provide unit tests.
 
-##[Answer to Question 1](docs/Answer1.md)
+##[Navigate to Answer for Question 1](docs/Answer1.md)
 
 Question 2:
 
@@ -31,7 +31,7 @@ Currently everyone is an Employee and some of those are Managers, which is deter
  
 Create a new implementation of the Employee class which provides the flexibility required to support the new part-time employee notion. You are free to refactor this class as required and add additional classes if needed. 
 
-##[Answer to Question 2](docs/Answer2.md)
+##[Navigate to Answer for Question 2](docs/Answer2.md)
 
 
 
