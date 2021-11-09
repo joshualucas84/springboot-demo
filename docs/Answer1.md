@@ -7,9 +7,17 @@ cd springboot-demo
 ```
 
 In the root directory of the project run the following command to launch application
+
+For linux
 ```
 ./gradlew bootRun
 ```
+
+For windows
+```
+gradlew.bat bootRun
+```
+
 
 Application url 
 ### [http://localhost:8080](http://localhost:8080)
