@@ -63,4 +63,4 @@ Off course, this might bring (in case Employee is a database entity) some extra 
 |minMandatoryWorkingHoursPerWeek: int|
 
 
-### [Navigate to Answer to Question 1](docs/Answer1.md)
+### [Navigate to Answer to Question 1](Answer1.md)
