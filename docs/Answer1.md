@@ -21,4 +21,4 @@ To run test from root directory of the project, run the following command
 ./gradlew clean test
 ```
 
-### [Navigate to Answer to Question 2](docs/Answer2.md)
+### [Navigate to Answer to Question 2](Answer2.md)
