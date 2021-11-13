@@ -1,3 +1,5 @@
+![build pass](https://github.com/joshualucas84/springboot-demo/actions/workflows/docker-image.yml/badge.svg)
+
 # Objective
 
 The following two questions are designed to get a feel for your understanding of the Java programming language, basic object-oriented design, good programming practices, and ability to learn new material. 
