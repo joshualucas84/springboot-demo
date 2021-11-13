@@ -112,7 +112,7 @@ export default function PrimeFinderAnimation(
         }
     );
 
-    const setNextCellColor = () => {
+    const setNextCellColor =  React.useCallback(() => {
 
         if(state.animationArray.length <= 0) {
             if(!state.startedWithPrimes){
@@ -149,7 +149,7 @@ export default function PrimeFinderAnimation(
             primesLabel: state.primesLabel,
             colorMatrix: colorMatrix
         });
-    };
+    }, [state]);
 
     React.useEffect(() => {
     function fetchBusinesses() {
