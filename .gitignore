@@ -1,5 +1,12 @@
 .gradle
 /build/
+/target/
+/bin/
+/.classpath
+/*.project
+/.settings
+/*.springBeans
+/*.vscode
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -81,6 +88,11 @@ fabric.properties
  # production
  /build
 
+ /bin/
+ .classpath
+ .project
+ .vscode/*
+
  # misc
  .DS_Store
  .env.local
@@ -91,3 +103,13 @@ fabric.properties
  npm-debug.log*
  yarn-debug.log*
  yarn-error.log*
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
