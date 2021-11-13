@@ -1,0 +1,6 @@
+version: '3'
+services:
+  spring-boot-demo:
+    image: ttl.sh/spring-boot-demo:1h
+    ports:
+      - '8080:8080'
