@@ -152,16 +152,17 @@ export default function PrimeFinderAnimation(
     };
 
     React.useEffect(() => {
-
-        timer.start(
+    function fetchBusinesses() {
+            timer.start(
             () => setNextCellColor()
         ,200);
-
         return () => {
-          timer.stop();
+        timer.stop();
         };
-      },
-      []);
+    }
+    fetchBusinesses()
+    },
+    [setNextCellColor]);
 
     return (
         <mui.Grid container direction="column" spacing={2}>
